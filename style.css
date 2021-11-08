@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia22486-main.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    object-fit: fill;
+    height: 100vh;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+.data-container{
+    width: 390px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    background-color: rgba(200, 230,255, 0.1);
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 16px;
+    margin: 50px 0px 0px 50px;
+}
+
+.data-container p{
+    font-size: 22px;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-top: 16px;
+    letter-spacing: 1px;
+}
+.data-container #fechaTxt{
+    margin-top: 0;
+}
+.data{
+    padding-bottom: 50px;
+} 
+.tittle-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+.tittle-container h2{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+.tittle-container span{
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer{
+    width: 100%;
+    height: 5vh;
+    position: absolute;
+    top: 95vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px 0px 15px;
+}
+
+.search-container{
+    display: flex;
+    justify-content:space-between;
+    border-top: 1px solid black;
+    padding: 4px;
+}
+
+.button{
+    width: 70%;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(200, 189,205, 0.7);
+    font-weight: bold;
+
+}
+
+.sun-input{
+    width: 20%;
+    border-radius: 10%;
+    text-align: center;
+    background-color: rgba(200, 189,205, 0.2);
+    padding: 0;
+    font-size: 16px;
+}
+
+
+.footer a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+.footer a:hover{
+
+    text-decoration: underline;
+}
+
+@media (max-width:640px){
+    .data-container{
+        border: none;
+        background-color:transparent;
+        margin: 0;
+        padding: 5px;
+    }
+}

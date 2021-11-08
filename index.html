@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Temperatura en Marte</title>
+</head>
+<body>
+    <main>
+        <div class="data-container">
+            <div class="tittle-container">
+                <h2>Temperatura en Marte</h2>
+                <span>Ultima información climática del Rover Curiosity en Marte</span>
+            </div>
+            <div class="data">
+                <p >Fecha terrestre: </p>
+                <br>
+                <p id="fechaTxt"> </p>
+                <p id="solTxt">Sol numero:</p>
+                <p id="tmaxTxt">Temperatura máxima</p>
+                <p id="tminTxt">Temperatura mínima:</p>
+                <p id="unitTxt">Unidad de medida:</p>
+                <h3 id="errorLbl" style="color: darkblue; font-weight: bold;"></h3>
+            </div>
+
+            <div class="search-container">
+                <button type="button" class="button" >Buscar Sol #: </button>
+                <input type="number" placeholder="22" class="sun-input" id="sunTxt"/>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <a target="blank" href="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia22486-main.jpg">Foto tomada de la NASA</a>
+        <a target="blank" href="https://api.maas2.apollorion.com/">Información tomada de la API</a>
+    </footer>
+    <script async src="./index.js"></script>
+</body>
+</html>
